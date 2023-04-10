@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    
+    <title>Doctor</title>
+</head>
+<body>
+    <main>
+        <section class="banner">
+            <div class="banner-img">
+                <img src="./images/News Banner.png" alt="as">
+            </div>
+        </section>
+        <section class="news-section">
+            <div class="news-text mt-88 mb-87">
+                <h2 class="h2">News & Updates</h2>
+            </div>
+        </section>
+        <section class="news-box-section">
+            <div class="doctor-container">
+                <div class="doctor-boxes">
+                    <div class="boxes">
+                        <div class="box">
+                            <div class="image">
+                                <img src="./images/box-images/box-img-1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="heading">
+                                    <h2 class="h2-odd">News Headline</h2>
+                                </div>
+                                <div class="para">
+                                    <p class="p">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="./images/box-images/box-img-2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="heading">
+                                    <h2 class="h2-odd">News Headline</h2>
+                                </div>
+                                <div class="para">
+                                    <p class="p">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="./images/box-images/box-img-3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="heading">
+                                    <h2 class="h2-odd">News Headline</h2>
+                                </div>
+                                <div class="para">
+                                    <p class="p">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="./images/box-images/box-img-3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="heading">
+                                    <h2 class="h2-odd">News Headline</h2>
+                                </div>
+                                <div class="para">
+                                    <p class="p">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="./images/box-images/box-img-3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="heading">
+                                    <h2 class="h2-odd">News Headline</h2>
+                                </div>
+                                <div class="para">
+                                    <p class="p">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="./images/box-images/box-img-3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="heading">
+                                    <h2 class="h2-odd">News Headline</h2>
+                                </div>
+                                <div class="para">
+                                    <p class="p">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accordian">
+            <div class="doctor-container">
+                <div class="load-more-box ">
+                    <a href="#" class="btn" data-show>Load More</a>
+                </div>
+                <div class="news-text mt-88 mb-51">
+                    <h2 class="h2">Upcoming News & Events</h2>
+                </div>
+                <div class="accordian-contain">
+                    <div class="accordian-box" data-accordian>
+                        <div class="head">
+                           <button class="acrd-header" ><h2 class="accordian-h2">01.01.2023  -  Upcoming News and Event 1 heading</h2></button> 
+                        </div>
+                        <div class="contain">
+                            <p class="p">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).on('click', '[data-accordian]', function(){
+
+        $(this).parent().siblings().find('[data-accordian]').removeClass('active');
+
+        $(this).toggleClass('active');
+
+        $(this).parent().siblings().find('[data-accordian]').next().slideUp();
+
+        $(this).next().slideToggle();
+
+        })
+
+
+        var innerShow = $(".doctor-boxes").outerHeight()
+
+        $("[data-show]").click(function(){
+
+        var thisText = $(this).text()
+
+        var eleShow = $(this).prev('.boxes')
+
+        var eleHeight = eleShow.outerHeight()
+
+        if(eleHeight == 71){
+
+        eleShow.animate({height: innerShow}, 1000)
+
+        } else{
+
+        eleShow.animate({height: 71}, 1000)
+
+        }
+
+        $(this).text(thisText == "Load more" ? "Load less" : "Load more")
+
+        })
+
+
+        $("[data-show-text]").click(function(){
+
+        $(this).prev().toggleClass("active")
+
+        $(this).text($(this).text() == "Load more" ? "Load less" : "Load more")
+
+        })
+    </script>
+</body>
+</html>
